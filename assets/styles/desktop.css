@@ -1,0 +1,26 @@
+#app {
+    width: 40vw;
+    background-color: #333333;
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.yellow {
+    font-size: 4vw;
+}
+
+.imgQr {
+    width: 38vw;
+    height: 38vw;
+    border-radius: 3px;
+}
+
+.form-control {
+    display: flex;
+    margin: 1.2vh;
+    width: 38vw;
+  }

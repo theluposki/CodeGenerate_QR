@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeGenerate_QR</title>
+    <link rel="icon" type="image/svg" href="/favicon.svg">
+    <link rel="stylesheet" media="all" href="./assets/styles/root.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="./assets/styles/mobile.css" >
+    <link rel="stylesheet" media="screen and (min-width: 901px)" href="./assets/styles/desktop.css">
+    <script defer src="https://unpkg.com/akar-icons-fonts"></script>
+  </head>
+  <body>
+      <div id="app">
+        <h1 class="yellow">
+            CodeGenerate_QR
+        </h1>
+        <div class="form-control">
+            <input @keydown="generate()" v-model="text" type="text" placeholder="digite seu texto aqui">
+            <button @click="pasteClip()">
+                <i class="ai-clipboard"></i>
+            </button>
+        </div>
+        <img class="imgQr" :src="qrCode" alt="qr code">
+        <span>
+            <a href="https://github.com/theluposki" target="_blank" rel="noopener noreferrer">
+                <i class="ai-link-out"></i>&nbsp;
+                Developed by theluposki
+            </a>
+        </span>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
