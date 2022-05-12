@@ -1,5 +1,5 @@
 # CodeGenerate_QR
 
-=> [CodeGenerate_QR](http://exemplo.com/)
+=> [CodeGenerate_QR](https://theluposki.github.io/CodeGenerate_QR/)
 
 Developed by theluposki
