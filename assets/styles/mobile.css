@@ -14,13 +14,43 @@
 }
 
 .imgQr {
-    width: 80vw;
-    height: 80vw;
+    width: 60vw;
+    height: 60vw;
     border-radius: 3px;
 }
 
 .form-control {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin: 1.2vh;
-    width: 80vw;
+    width: 60vw;
 }
+
+.btn-full {
+    width: 60vw;
+    background-color: #194e67;
+    color: #f5ca56;
+    font-weight: 600;
+  }
+  
+  .options-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    transition: all ease 0.4s;
+  }
+  
+  .views {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all ease 0.4s;
+  }
+  
+  .options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all ease 0.4s;
+  }

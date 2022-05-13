@@ -43,20 +43,32 @@ body {
 }
 
 
-input {
+input, select {
   flex: 1;
   height: 40px;
+  min-height: 40px;
   padding: 0 10px;
-  border-radius: 3px 0px 0px 3px;
+  border-radius: 3px;
 }
 
 button {
   width: 40px;
   height: 40px;
   font-size: 36px;
-  border-radius: 0px 3px 3px 0px;
+  border-radius: 3px;
   background-color: #F5CA56;
   color: #333333;
+}
+
+button:active {
+  transition: all ease 0.1s;
+  opacity: 0.4;
+}
+
+
+button:hover {
+  transition: all ease 0.5s;
+  opacity: 0.8;
 }
 
 a {

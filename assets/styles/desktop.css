@@ -14,13 +14,45 @@
 }
 
 .imgQr {
-    width: 38vw;
-    height: 38vw;
+    width: 25vw;
+    height: 25vw;
     border-radius: 3px;
+}
+
+.btn-full {
+    width: 25vw;
+    background-color: #194E67;
+    color: #F5CA56;
+    font-weight: 600;
 }
 
 .form-control {
     display: flex;
+    flex-direction: column;
     margin: 1.2vh;
-    width: 38vw;
+    width: 25vw;
+    gap: 10px;
   }
+
+.options-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    transition: all ease 0.4s;
+}
+
+.views {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all ease 0.4s;
+
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all ease 0.4s;
+
+}
