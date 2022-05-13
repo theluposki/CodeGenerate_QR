@@ -1,58 +1,90 @@
 #app {
-    width: 40vw;
-    background-color: #333333;
-    padding: 2vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 5px;
+  width: 40vw;
+  background-color: #333333;
+  padding: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
 }
 
 .yellow {
-    font-size: 4vw;
+  font-size: 4vw;
 }
 
 .imgQr {
-    width: 25vw;
-    height: 25vw;
-    border-radius: 3px;
-}
-
-.btn-full {
-    width: 25vw;
-    background-color: #194E67;
-    color: #F5CA56;
-    font-weight: 600;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 3px;
 }
 
 .form-control {
-    display: flex;
-    flex-direction: column;
-    margin: 1.2vh;
-    width: 25vw;
-    gap: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  margin: 1.2vh;
+  width: 25vw;
+  gap: 10px;
+}
+
+.btn-full {
+  width: 25vw;
+  background-color: #194e67;
+  color: #f5ca56;
+  font-weight: 600;
+}
 
 .options-group {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    transition: all ease 0.4s;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  transition: all ease 0.4s;
 }
 
 .views {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: all ease 0.4s;
-
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all ease 0.4s;
 }
 
 .options {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: all ease 0.4s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all ease 0.4s;
+}
 
+.downShare {
+  width: 25vw;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 5px;
+  gap: 10px;
+}
+
+.downShare a {
+  flex: 1;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #194e67;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5ca56;
+  font-size: 30px;
+}
+
+.downShare a:active {
+  transition: all ease 0.1s;
+  border: solid 1px #f5ca56;
+  opacity: 0.4;
+}
+
+.downShare a:hover {
+  transition: all ease 0.5s;
+  opacity: 0.8;
 }

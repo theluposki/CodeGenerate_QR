@@ -10,6 +10,7 @@ createApp({
       ssid: null,
       security: "WPA",
       password: null,
+      linkDownload: null,
     };
   },
   mounted() {
@@ -29,13 +30,21 @@ createApp({
       const wifiString = `WIFI:S:${this.ssid};T:${this.security};P:${this.password};`
 
       if(this.viewWifi) {
+        this.linkDownload = `${baseUrl}${wifiString}`
         return this.qrCode = `${baseUrl}${wifiString}`;
       }
+      this.linkDownload = `${baseUrl}${this.text}`
       this.qrCode = `${baseUrl}${this.text}`;
     },
     async pasteClip() {
       this.text = await navigator.clipboard.readText();
       this.generate();
     },
+    downloadQR() {
+      console.log("Download")
+    },
+    shareQR() {
+      console.log("Share")
+    }
   },
 }).mount("#app");

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="content-disposition" content="inline; filename=QRCode.png">
     <title>CodeGenerate_QR</title>
     <link rel="icon" type="image/svg" href="/favicon.svg" />
     <link rel="stylesheet" media="all" href="./assets/styles/root.css" />
@@ -32,7 +33,11 @@
           <option value="WPA">WPA/WPA2</option>
           <option value="WEP">WEP</option>
         </select>
-        <input v-model="password" type="password" placeholder="digite a senha da rede" />
+        <input
+          v-model="password"
+          type="password"
+          placeholder="digite a senha da rede"
+        />
       </div>
       <div class="form-control">
         <input
@@ -56,11 +61,22 @@
             </button>
           </div>
         </div>
-        <button @click="generate()" class="btn-full">
-          Gerar
-        </button>
+        <button @click="generate()" class="btn-full">Gerar</button>
       </div>
       <img class="imgQr" :src="qrCode" alt="qr code" />
+      {{ linkDownload }}
+      <div class="downShare">
+        <a
+          href="./favicon.svg"
+          type="application/octet-stream"
+          download="QRCode" target="_blank"
+        >
+          <i class="ai-download"></i>
+        </a>
+        <a @click="shareQR()">
+          <i class="ai-arrow-forward-thick-fill"></i>
+        </a>
+      </div>
       <span>
         <a
           href="https://github.com/theluposki"

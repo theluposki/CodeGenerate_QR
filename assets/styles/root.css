@@ -62,6 +62,7 @@ button {
 
 button:active {
   transition: all ease 0.1s;
+  border: solid 1px #f5ca56;
   opacity: 0.4;
 }
 
