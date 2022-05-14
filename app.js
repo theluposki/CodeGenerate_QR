@@ -43,8 +43,20 @@ createApp({
     downloadQR() {
       console.log("Download")
     },
-    shareQR() {
-      console.log("Share")
+    async shareQR() {
+      const shareData = {
+        title: 'MDN',
+        text: 'Aprenda desenvolvimento web no MDN!',
+        url: 'https://developer.mozilla.org'
+      }
+
+      try {
+        navigator.canShare(shareData).then((item) => {
+          console.log("the", item)
+        })
+      } catch (error) {
+        console.log("Error: "+error)
+      }
     }
   },
 }).mount("#app");

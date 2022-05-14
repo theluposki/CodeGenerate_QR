@@ -66,11 +66,7 @@
       <img class="imgQr" :src="qrCode" alt="qr code" />
       {{ linkDownload }}
       <div class="downShare">
-        <a
-          href="./favicon.svg"
-          type="application/octet-stream"
-          download="QRCode" target="_blank"
-        >
+        <a @click="downloadQR()" id="link">
           <i class="ai-download"></i>
         </a>
         <a @click="shareQR()">
