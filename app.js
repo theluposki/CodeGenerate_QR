@@ -39,24 +39,6 @@ createApp({
     async pasteClip() {
       this.text = await navigator.clipboard.readText();
       this.generate();
-    },
-    downloadQR() {
-      console.log("Download")
-    },
-    async shareQR() {
-      const shareData = {
-        title: 'MDN',
-        text: 'Aprenda desenvolvimento web no MDN!',
-        url: 'https://developer.mozilla.org'
-      }
-
-      try {
-        navigator.canShare(shareData).then((item) => {
-          console.log("the", item)
-        })
-      } catch (error) {
-        console.log("Error: "+error)
-      }
     }
   },
 }).mount("#app");

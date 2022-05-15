@@ -64,15 +64,6 @@
         <button @click="generate()" class="btn-full">Gerar</button>
       </div>
       <img class="imgQr" :src="qrCode" alt="qr code" />
-      {{ linkDownload }}
-      <div class="downShare">
-        <a @click="downloadQR()" id="link">
-          <i class="ai-download"></i>
-        </a>
-        <a @click="shareQR()">
-          <i class="ai-arrow-forward-thick-fill"></i>
-        </a>
-      </div>
       <span>
         <a
           href="https://github.com/theluposki"
